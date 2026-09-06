@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Q-Hotel — Luxury Stay</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,600&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="theme-light">
+
+  <!-- ШАПКА -->
+  <header class="header" id="header">
+    <a class="logo" href="#top">
+      Q-HOTEL
+      <small>Luxury stay, redefined</small>
+    </a>
+    <nav class="nav">
+      <a href="#rooms">Номера</a>
+      <a href="#services">Сервис</a>
+      <a href="#about">Об отеле</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <a href="#contacts" class="btn btn-sm">Забронировать</a>
+  </header>
+
+  <main class="main">
+
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="hero-bg" style="background-image:url('assets/img/hero-3.png')"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="eyebrow reveal">Эксклюзивные номера</p>
+        <h1 class="reveal d1">Роскошь<br>вне <em>ожиданий</em></h1>
+        <p class="hero-sub reveal d2">Отобранные номера для тех, кто ждёт от жизни большего.</p>
+        <div class="hero-actions reveal d3">
+          <a href="#rooms" class="btn">Смотреть номера <span class="arr">→</span></a>
+        </div>
+      </div>
+      <div class="hero-stats reveal d3">
+        <div class="hstat"><b>120+</b><span>номеров и люксов</span></div>
+        <div class="hstat"><b>5.0</b><span>рейтинг гостей</span></div>
+        <div class="hstat"><b>24/7</b><span>персональный консьерж</span></div>
+      </div>
+    </section>
+
+    <!-- АНИМАЦИЯ ПО СКРОЛЛУ: проход к окну -->
+    <section class="walk" id="atmosphere">
+      <div class="walk-sticky">
+        <video id="walkVideo" src="assets/video/walkthrough.mp4?v=3" muted playsinline autoplay preload="auto"></video>
+        <div class="walk-caption">
+          <p class="eyebrow">Атмосфера</p>
+          <h2>От порога —<br>до горизонта</h2>
+        </div>
+      </div>
+    </section>
+
+    <!-- СЕРВИСЫ -->
+    <section class="services" id="services">
+      <div class="services-lead reveal">
+        <p class="eyebrow">Сервис</p>
+        <h2>Сервис, который<br>предугадывает желания</h2>
+      </div>
+      <div class="services-grid">
+        <div class="service reveal">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M7 3h10l3 4-8 14L4 7l3-4z"/>
+            <path d="M4 7h16"/>
+            <path d="M9.5 7 12 21l2.5-14"/>
+            <path d="M7 3l2.5 4M17 3l-2.5 4"/>
+            <path d="M12 1v1.6M5.2 1.8l1 1.6M18.8 1.8l-1 1.6" opacity=".65"/>
+          </svg>
+          <h3>Люкс-номера</h3>
+          <p>Просторные интерьеры с видом, ради которого приезжают.</p>
+        </div>
+        <div class="service reveal d1">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="8.5"/>
+            <path d="M3.8 10.5A8.5 8.5 0 0 1 12 3.5"/>
+            <path d="M12 .8v2.4M21 9.6l-2.3.7" opacity=".65"/>
+            <circle cx="12" cy="12" r="2.4"/>
+            <circle cx="12" cy="12" r=".6" fill="currentColor" stroke="none"/>
+          </svg>
+          <h3>Виртуальные туры</h3>
+          <p>Пройдитесь по номеру онлайн — ещё до приезда.</p>
+        </div>
+        <div class="service reveal d2">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 3.2a6 6 0 0 1 6 6c0 4.8 1.9 6.3 1.9 6.3H4.1C4.1 15.5 6 14 6 9.2a6 6 0 0 1 6-6z"/>
+            <path d="M4.5 15.5h15"/>
+            <path d="M10 18.3a2 2 0 0 0 4 0"/>
+            <path d="M12 3.2v1.8"/>
+            <circle cx="12" cy="6.8" r=".8"/>
+            <path d="M9 12.2c0-1.9.8-3.2.8-3.2M15 12.2c0-1.9-.8-3.2-.8-3.2" opacity=".65"/>
+          </svg>
+          <h3>Личный консьерж</h3>
+          <p>От ужина до вертолётной экскурсии — один звонок.</p>
+        </div>
+        <div class="service reveal d3">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2.6 19.4 6v5.4c0 4.7-3.1 7.7-7.4 9.4-4.3-1.7-7.4-4.7-7.4-9.4V6L12 2.6z"/>
+            <path d="M12 2.6V6" opacity=".65"/>
+            <path d="m8.4 12 2.4 2.4 4.8-5.2"/>
+          </svg>
+          <h3>Безопасная бронь</h3>
+          <p>Прозрачные цены и полная конфиденциальность гостей.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- НОМЕРА -->
+    <section class="rooms" id="rooms">
+      <div class="rooms-head reveal">
+        <p class="eyebrow">Избранное</p>
+        <h2>Номера, ради которых возвращаются</h2>
+        <span class="divider"></span>
+      </div>
+      <div class="rooms-grid">
+        <article class="room-card reveal">
+          <div class="room-img" style="background-image:url('assets/img/standart-2.png')">
+            <span class="tag">Featured</span>
+            <button class="fav" aria-label="В избранное">♡</button>
+          </div>
+          <div class="room-info">
+            <p class="room-loc">• 50 м над рекой · Вид на реку и гору</p>
+            <h3>Стандарт Deluxe</h3>
+            <p class="room-specs">2 гостя · 32 м² · King bed</p>
+            <p class="room-price">от 12 500 ₽ <small>/ ночь</small></p>
+          </div>
+        </article>
+        <article class="room-card reveal d1">
+          <div class="room-img" style="background-image:url('assets/img/comfort-3.png')">
+            <span class="tag">Featured</span>
+            <button class="fav" aria-label="В избранное">♡</button>
+          </div>
+          <div class="room-info">
+            <p class="room-loc">• 150 м · Лес, река и гора</p>
+            <h3>Комфорт Панорама</h3>
+            <p class="room-specs">2 гостя · 45 м² · King bed</p>
+            <p class="room-price">от 18 900 ₽ <small>/ ночь</small></p>
+          </div>
+        </article>
+        <article class="room-card reveal d2">
+          <div class="room-img" style="background-image:url('assets/img/hero-1.png')">
+            <span class="tag">Featured</span>
+            <button class="fav" aria-label="В избранное">♡</button>
+          </div>
+          <div class="room-info">
+            <p class="room-loc">• Панорамное окно · Пик в облаках</p>
+            <h3>Люкс Residence</h3>
+            <p class="room-specs">4 гостя · 78 м² · 2 спальни</p>
+            <p class="room-price">от 34 000 ₽ <small>/ ночь</small></p>
+          </div>
+        </article>
+      </div>
+      <div class="rooms-more reveal">
+        <a href="#" class="btn">Все номера <span class="arr">→</span></a>
+      </div>
+    </section>
+
+    <!-- ОБ ОТЕЛЕ (сплит: текст + фото) -->
+    <section class="about" id="about">
+      <div class="about-text reveal">
+        <p class="eyebrow eyebrow-italic">Наша философия</p>
+        <h2>Стандарт выше остальных</h2>
+        <p>Мы соединяем мировую экспертизу с локальным гостеприимством, чтобы каждый вечер в Q-Hotel становился маленьким ритуалом: свет, тишина, детали.</p>
+        <a href="#" class="btn">Подробнее об отеле</a>
+      </div>
+      <div class="about-img reveal d1" style="background-image:url('assets/img/philosophy.png')"></div>
+    </section>
+
+    <!-- СТАТИСТИКА -->
+    <section class="stats">
+      <div class="stat reveal"><b>500+</b><span>довольных гостей</span></div>
+      <div class="stat reveal d1"><b>25+</b><span>наград индустрии</span></div>
+      <div class="stat reveal d2"><b>120+</b><span>номеров люкс-класса</span></div>
+      <div class="stat reveal d3"><b>10+</b><span>лет безупречного сервиса</span></div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta" id="contacts">
+      <div class="cta-card reveal">
+        <p class="eyebrow">Бронирование</p>
+        <h2>Забронируйте номер</h2>
+        <p>Оставьте заявку — консьерж свяжется с вами в течение 15 минут и подберёт идеальный номер.</p>
+        <div class="cta-actions">
+          <a href="#" class="btn">Оставить заявку <span class="arr">→</span></a>
+          <a href="tel:+78000000000" class="cta-phone">+7 (800) 000-00-00</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ФУТЕР -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="fcol">
+        <a class="logo" href="#top">Q-HOTEL<small>Luxury stay, redefined</small></a>
+        <p>Отель для тех, кто выбирает тишину, свет и безупречный сервис.</p>
+      </div>
+      <div class="fcol">
+        <h4>Отель</h4>
+        <a href="#rooms">Номера</a>
+        <a href="#services">Сервис</a>
+        <a href="#about">Об отеле</a>
+      </div>
+      <div class="fcol">
+        <h4>Гостям</h4>
+        <a href="#">Бронирование</a>
+        <a href="#">Трансфер</a>
+        <a href="#">Спа и ресторан</a>
+      </div>
+      <div class="fcol">
+        <h4>Контакты</h4>
+        <a href="tel:+78000000000">+7 (800) 000-00-00</a>
+        <a href="mailto:stay@q-hotel.ru">stay@q-hotel.ru</a>
+        <span>Москва, Тверская, 1</span>
+      </div>
+    </div>
+    <div class="footer-bar">
+      <span>© Q-Hotel, 2026</span>
+      <span class="socials">f · in · tg</span>
+    </div>
+  </footer>
+
+  <!-- ПАНЕЛЬ ВЫБОРА ШРИФТА НАДПИСЕЙ: удалена, шрифт зафиксирован -->
+  <script src="main.js"></script>
+</body>
+</html>
