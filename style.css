@@ -426,6 +426,7 @@ h1 em, h2 em {
   transition: background .5s;
 }
 .cta-card h2 { font-size: clamp(36px, 4.4vw, 62px); margin: 16px 0 18px; }
+.cta-card .eyebrow { font-size: 55px; } /* надпись «Бронирование» ×5 */
 .cta-card > p { color: var(--muted); max-width: 480px; margin: 0 auto 42px; font-size: 15px; }
 .cta-actions {
   display: flex;
@@ -540,6 +541,7 @@ h1 em, h2 em {
   .stats { grid-template-columns: 1fr 1fr; gap: 28px; padding: 56px 20px; }
 
   .cta-card { padding: 52px 22px; }
+  .cta-card .eyebrow { font-size: clamp(30px, 10vw, 55px); }
   .cta-actions { gap: 20px; flex-direction: column; }
   .cta-phone { font-size: 18px; }
 
